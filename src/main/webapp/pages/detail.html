@@ -1,0 +1,8 @@
+<alert ng-repeat="alert in alerts" type="alert.type"
+	close="closeAlert($index)">{{alert.msg}}</alert>
+<div ng-repeat="alert in alerts">{{ alert.type }} {{ alert.msg }}</div>
+<form class="form-inline">
+	<input type="text" class="input-large" placeholder="Enter a description..."
+		ng-model="item.text">
+	<button ng-click="save(item)" class="btn btn-primary">Submit</button>
+</form>

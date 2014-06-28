@@ -1,0 +1,22 @@
+<div>
+	<button ng-click="newItem()" class="btn">Add a item</button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Created</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+	    <tr ng-repeat="item in items">
+            <td>{{ item.id }}</td>
+			<td><a href="#/detail/{{ item.id }}">{{ item.text }}</a></td>
+			<td>{{ item.created | date:'MM/dd/yyyy' }}
+			<td><i ng-click="removeItem(item)" class="icon-remove-sign"></i>
+	    </tr
+    </tbody>
+</table>

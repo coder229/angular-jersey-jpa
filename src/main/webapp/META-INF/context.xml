@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+    <Resource 
+        auth="Container" 
+        driverClassName="org.h2.Driver" 
+        maxActive="8" maxIdle="4" 
+        name="jdbc/todo" 
+        password="" 
+        type="javax.sql.DataSource" 
+        url="jdbc:h2:~/tmp/todo" 
+        username="sa"/>
+</Context>

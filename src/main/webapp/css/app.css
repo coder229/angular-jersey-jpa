@@ -1,0 +1,26 @@
+body {
+}
+
+#main {
+	margin: 5px 15px 5px 15px;
+	min-height: 800px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#content {
+	margin: 5px 10px 5px 5px;
+	padding: 5px;
+}
+
+td.name {
+	width: 250px;
+}
+td.path {
+	width: 500px;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+td.date {
+	white-space:nowrap;
+}
