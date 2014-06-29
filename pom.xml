@@ -4,6 +4,7 @@
 	<groupId>com.github.coder229</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>angular-jersey-jpa</name>
+	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -41,17 +42,30 @@
 			<artifactId>h2</artifactId>
 			<version>1.4.178</version>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
 				<configuration>
-					<!-- or whatever version you use -->
 					<source>1.7</source>
 					<target>1.7</target>
 				</configuration>
+			</plugin>
+			<plugin>
+			  <groupId>org.apache.tomcat.maven</groupId>
+			  <artifactId>tomcat7-maven-plugin</artifactId>
+			  <version>2.1</version>
+			  <configuration>
+			    <path>/</path>
+			  </configuration>
 			</plugin>
 		</plugins>
 	</build>
