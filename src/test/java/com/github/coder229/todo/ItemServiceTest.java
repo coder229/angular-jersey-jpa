@@ -86,7 +86,7 @@ public class ItemServiceTest extends ItemService {
 	}
 
 	@Test
-	public void testGetBudget() {
+	public void testGetItems() {
 		long id = createItem("Item to get");
 		
 		Response response = service.getItem(id);

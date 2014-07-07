@@ -2,6 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.coder229</groupId>
+	<artifactId>angular-jersey-jpa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>angular-jersey-jpa</name>
 	<packaging>war</packaging>
@@ -69,5 +70,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<artifactId>angular-jersey-jpa</artifactId>
 </project>

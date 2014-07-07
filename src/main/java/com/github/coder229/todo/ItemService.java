@@ -34,7 +34,7 @@ public class ItemService {
 	public Response getAllItems() {
 		List<Item> list = jpaService.getListFromNamedQuery(Item.GET_ALL, Item.class);
 		
-		LOG.info("Found " + list.size() + " budgets");
+		LOG.info("Found " + list.size() + " items");
 		return Response.ok(list).build();
 	}
 
